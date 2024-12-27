@@ -17,16 +17,16 @@ Not forgetting all the extra modules for typing and proper operation.
 ## files:
 
 - **config**: All configuration files
-- controllers**: classes that link HTTP requests to business services
-- errors**: error handling files with a middleware function for centralized management in app
-- interfaces**: interface contracts
-- middleware**: enabling the integration of additional functionalities such as security checks, traceability, notifications, etc. They allow us to customize the system.
-- models**: are simple representations of the tables in the database.
-- schemas**: same principle as models, but with added “intelligence”. In essence, they provide the connection between the models and the ORM.
-- services**: are the business logic. They provide the link between controllers and schemas. We can also have purely computational logic services.
-- routes**: are all the routes for each controller.
-- tools**: where you can get all the tools from scratch.
-- types**: Allows you to add global types, to enrich existing types in the application.
+- **controllers**: classes that link HTTP requests to business services
+- **errors**: error handling files with a middleware function for centralized management in app
+- **interfaces**: interface contracts
+- **middleware**: enabling the integration of additional functionalities such as security checks, traceability, notifications, etc. They allow us to customize the system.
+- **models**: are simple representations of the tables in the database.
+- **schemas**: same principle as models, but with added “intelligence”. In essence, they provide the connection between the models and the ORM.
+- **services**: are the business logic. They provide the link between controllers and schemas. We can also have purely computational logic services.
+- **routes**: are all the routes for each controller.
+- **tools**: where you can get all the tools from scratch.
+- **types**: Allows you to add global types, to enrich existing types in the application.
 
 In this example, we've taken a partial approach. There is no **repository**. Its function is to act as a link between the services and the **ORM** to be used. This layer can be used as an abstraction if several **ORM** are used in the application, which is not the case here.
 
